@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.container {
+  width: 1150px;
+  margin: 0 auto;
+}
+
+.wrapper-section {
+  background: url(../../image/welcome-backgroung.png) top, rgba(35, 39, 81, 0.9);
+  background-size: cover;
+  background-blend-mode: multiply;
+  padding-bottom: 150px;
+}
+
+.jumbotron {
+  background-color: transparent;
+  text-align: center;
+  position: relative;
+  padding: 0 25px;
+  margin-top: 150px;
+
+  h2 {
+    font-family: 'Open Sans', sans-serif;
+    color: $white-color;
+    font-size: 65px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  p {
+    font-family: 'Raleway', sans-serif;
+    color: $white-color;
+    font-size: 22px;
+    margin:35px 0 80px;
+    line-height: 35px;
+
+  }
+
+  .btn-group-lg>.btn, .btn-lg {
+    padding: 15px 45px;
+    font-size: 13px;
+    text-transform: uppercase;
+    border-radius: 3px;
+
+  }
+
+  .btn-primary {
+    border: none;
+    background-color: $red-color;
+  }
+ }
+
+.btn-primary.focus, .btn-primary:focus {
+  color: $white-color;
+}
