@@ -1,3 +1,15 @@
+.list-works {
+  display: flex;
+  flex-wrap: wrap;
+
+  li {
+    width: 470px;
+    overflow: hidden;
+    height: 350px;
+    padding: 1px;
+  }
+}
+
 .hover-portfolio {
   display: none;
   position: relative;
@@ -28,11 +40,14 @@
   padding-top: 140px;
 }
 
-.list-works {
-  li {
-    width: 553px;
-    overflow: hidden;
-    height: 350px;
-  }
+.image-zoom img {
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
 }
 
+.works:hover .image-zoom img {
+  -webkit-transform: scale(1.5);
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+}
