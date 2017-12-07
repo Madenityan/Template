@@ -4,6 +4,9 @@ $light-grey-color:#d7d8db;
 $silver:#c6cacc;
 $grey:#858a8f;
 $purple-color:#4f5268;
+$dark-purple:#3a3e64;
+$dark-purple-two: #313454;
+$dark-silver:#7c7c7d;
 $red-color:#e84545;
 
 
@@ -12,11 +15,15 @@ $red-color:#e84545;
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url('../../myriad/MyriadPro.otf');
+}
 
 
 
 
-/*--- Background ----*/
+
 
 
 

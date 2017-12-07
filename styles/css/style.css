@@ -2,7 +2,10 @@
 /*--- Fonts ----*/
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
-/*--- Background ----*/
+@font-face {
+  font-family: 'MyriadPro-Regular';
+  src: url("../../myriad/MyriadPro.otf");
+}
 /* line 1, ../sass/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -109,6 +112,10 @@ table {
   font-weight: bold;
   font-size: 15px;
   text-transform: uppercase;
+}
+/* line 46, ../sass/layout/_header.scss */
+.list-menu .nav-item .nav-link:hover {
+  color: #ffffff;
 }
 
 /* line 1, ../sass/layout/section/welcome-section.scss */
@@ -375,4 +382,113 @@ table {
 /* line 65, ../sass/layout/section/team-section.scss */
 .icon:hover i {
   color: #ffffff;
+}
+
+/* line 1, ../sass/layout/section/download.scss */
+.download-wrapper {
+  padding: 100px 0 100px;
+  text-align: center;
+}
+/* line 5, ../sass/layout/section/download.scss */
+.download-wrapper h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 25px;
+  margin-bottom: 25px;
+}
+/* line 11, ../sass/layout/section/download.scss */
+.download-wrapper p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+}
+/* line 19, ../sass/layout/section/download.scss */
+.download-wrapper .btn-group-lg > .btn, .download-wrapper .btn-lg {
+  padding: 17px 80px;
+  font-size: 13px;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+/* line 27, ../sass/layout/section/download.scss */
+.download-wrapper .btn-primary {
+  border: none;
+  background-color: #e84545;
+}
+
+/* line 1, ../sass/layout/_footer.scss */
+.footer-top {
+  background-color: #3a3e64;
+  padding: 65px 100px;
+  text-align: center;
+}
+/* line 6, ../sass/layout/_footer.scss */
+.footer-top .container {
+  display: flex;
+  justify-content: space-around;
+}
+/* line 11, ../sass/layout/_footer.scss */
+.footer-top h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+/* line 20, ../sass/layout/_footer.scss */
+.footer-top p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 14px;
+  color: #c6cacc;
+  line-height: 20px;
+}
+/* line 27, ../sass/layout/_footer.scss */
+.footer-top .location, .footer-top .share, .footer-top .about {
+  width: 33%;
+}
+/* line 31, ../sass/layout/_footer.scss */
+.footer-top address {
+  width: 160px;
+  margin: 0 auto;
+}
+/* line 36, ../sass/layout/_footer.scss */
+.footer-top .icon {
+  border: 2px solid #ffffff;
+}
+/* line 40, ../sass/layout/_footer.scss */
+.footer-top .icon:hover {
+  border: none;
+}
+/* line 44, ../sass/layout/_footer.scss */
+.footer-top .icon-social {
+  justify-content: center;
+}
+/* line 47, ../sass/layout/_footer.scss */
+.footer-top .icon-social i {
+  color: #ffffff;
+}
+
+/* line 53, ../sass/layout/_footer.scss */
+.footer-bottom {
+  padding: 25px 0 25px;
+  background-color: #313454;
+  text-align: center;
+}
+/* line 58, ../sass/layout/_footer.scss */
+.footer-bottom p {
+  font: 100% 'MyriadPro-Regular';
+  font-size: 14px;
+  color: #7c7c7d;
+  line-height: 20px;
+}
+/* line 65, ../sass/layout/_footer.scss */
+.footer-bottom a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* line 70, ../sass/layout/_footer.scss */
+.footer-bottom i {
+  color: #e84545;
+  margin: 0 5px 0 5px;
 }

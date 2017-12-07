@@ -42,5 +42,9 @@
     font-size: 15px;
     text-transform: uppercase;
   }
+
+  .nav-item .nav-link:hover {
+    color: $white-color;
+  }
 }
 

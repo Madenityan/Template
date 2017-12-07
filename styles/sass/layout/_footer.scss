@@ -1,0 +1,76 @@
+.footer-top {
+  background-color: $dark-purple;
+  padding: 65px 100px;
+  text-align: center;
+
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: $white-color;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 14px;
+    color: $silver;
+    line-height: 20px;
+  }
+
+  .location, .share, .about   {
+    width: 33%;
+  }
+
+  address {
+    width: 160px;
+    margin: 0 auto;
+  }
+
+  .icon {
+    border: 2px solid $white-color;
+  }
+
+  .icon:hover {
+    border: none;
+  }
+
+  .icon-social {
+    justify-content: center;
+
+    i {
+      color: $white-color;
+    }
+  }
+}
+
+.footer-bottom {
+  padding: 25px 0 25px;
+  background-color: $dark-purple-two;
+  text-align: center;
+
+  p {
+    font: 100% 'MyriadPro-Regular';
+    font-size: 14px;
+    color: $dark-silver;
+    line-height: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: $white-color;
+  }
+
+  i {
+    color: $red-color;
+    margin: 0 5px 0 5px;
+  }
+}
+
+
