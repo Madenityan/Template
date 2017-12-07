@@ -48,3 +48,13 @@
   }
 }
 
+.fixed {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  background-color: $black-color;
+  z-index: 1;
+  padding: 20px 150px;
+}
+

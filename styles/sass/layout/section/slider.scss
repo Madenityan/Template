@@ -1,0 +1,27 @@
+.slider-quote .slick-initialized .slick-slide {
+   display: flex;
+ }
+
+.quote-slide {
+  background-color: $brown-color;
+
+  blockquote {
+    font-family: 'Cardo', serif;
+    font-size: 36px;
+    font-style: italic;
+    line-height: 45px;
+    color: $white-color;
+  }
+
+  cite {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    color: $white-color;
+    padding-left: 85px;
+
+  }
+}
+
+

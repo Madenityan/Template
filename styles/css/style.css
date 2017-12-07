@@ -2,6 +2,7 @@
 /*--- Fonts ----*/
 @import url("https://fonts.googleapis.com/css?family=Raleway:400,700");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+@import url("https://fonts.googleapis.com/css?family=Cardo:400,400i");
 @font-face {
   font-family: 'MyriadPro-Regular';
   src: url("../../myriad/MyriadPro.otf");
@@ -116,6 +117,17 @@ table {
 /* line 46, ../sass/layout/_header.scss */
 .list-menu .nav-item .nav-link:hover {
   color: #ffffff;
+}
+
+/* line 51, ../sass/layout/_header.scss */
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #27272a;
+  z-index: 1;
+  padding: 20px 150px;
 }
 
 /* line 1, ../sass/layout/section/welcome-section.scss */
@@ -257,13 +269,13 @@ table {
 }
 /* line 5, ../sass/layout/section/portfolio-section.scss */
 .list-works li {
-  width: 470px;
+  width: 25%;
   overflow: hidden;
   height: 350px;
   padding: 1px;
 }
 
-/* line 14, ../sass/layout/section/portfolio-section.scss */
+/* line 13, ../sass/layout/section/portfolio-section.scss */
 .hover-portfolio {
   display: none;
   position: relative;
@@ -272,7 +284,7 @@ table {
   text-align: center;
   width: 470px;
 }
-/* line 22, ../sass/layout/section/portfolio-section.scss */
+/* line 21, ../sass/layout/section/portfolio-section.scss */
 .hover-portfolio h3 {
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
@@ -281,33 +293,39 @@ table {
   text-transform: uppercase;
   color: #ffffff;
 }
-/* line 31, ../sass/layout/section/portfolio-section.scss */
+/* line 30, ../sass/layout/section/portfolio-section.scss */
 .hover-portfolio p {
   font-family: 'Raleway', sans-serif;
   color: #ffffff;
   font-size: 14px;
 }
 
-/* line 38, ../sass/layout/section/portfolio-section.scss */
+/* line 37, ../sass/layout/section/portfolio-section.scss */
 .works:hover .hover-portfolio {
   background: rgba(232, 69, 69, 0.8);
   display: block;
   cursor: pointer;
   padding-top: 140px;
+  width: 100%;
 }
 
 /* line 45, ../sass/layout/section/portfolio-section.scss */
+.image-zoom {
+  overflow: hidden;
+}
+/* line 48, ../sass/layout/section/portfolio-section.scss */
 .image-zoom img {
   -moz-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   -webkit-transition: all 0.3s ease-out;
+  transform: scale(1.1);
 }
 
-/* line 51, ../sass/layout/section/portfolio-section.scss */
+/* line 57, ../sass/layout/section/portfolio-section.scss */
 .works:hover .image-zoom img {
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -o-transform: scale(1.5);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -o-transform: scale(1.3);
 }
 
 /* line 1, ../sass/layout/section/team-section.scss */
@@ -382,6 +400,33 @@ table {
 /* line 65, ../sass/layout/section/team-section.scss */
 .icon:hover i {
   color: #ffffff;
+}
+
+/* line 1, ../sass/layout/section/slider.scss */
+.slider-quote .slick-initialized .slick-slide {
+  display: flex;
+}
+
+/* line 5, ../sass/layout/section/slider.scss */
+.quote-slide {
+  background-color: #53354a;
+}
+/* line 8, ../sass/layout/section/slider.scss */
+.quote-slide blockquote {
+  font-family: 'Cardo', serif;
+  font-size: 36px;
+  font-style: italic;
+  line-height: 45px;
+  color: #ffffff;
+}
+/* line 16, ../sass/layout/section/slider.scss */
+.quote-slide cite {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding-left: 85px;
 }
 
 /* line 1, ../sass/layout/section/download.scss */

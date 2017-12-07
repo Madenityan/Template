@@ -3,12 +3,11 @@
   flex-wrap: wrap;
 
   li {
-    width: 470px;
+    width: 25%;
     overflow: hidden;
     height: 350px;
     padding: 1px;
   }
-
 }
 
 .hover-portfolio {
@@ -40,16 +39,23 @@
   display: block;
   cursor: pointer;
   padding-top: 140px;
+  width: 100%;
 }
 
-.image-zoom img {
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  -webkit-transition: all 0.3s ease-out;
+.image-zoom {
+  overflow: hidden;
+
+  img {
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    transform: scale(1.1);
+
+  }
 }
 
 .works:hover .image-zoom img {
-  -webkit-transform: scale(1.5);
-  -moz-transform: scale(1.5);
-  -o-transform: scale(1.5);
+  -webkit-transform: scale(1.3);
+  -moz-transform: scale(1.3);
+  -o-transform: scale(1.3);
 }
