@@ -1,0 +1,50 @@
+@media screen and (max-width: 599px) {
+  .container {
+    width: 320px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  .fixed{
+    display: none;
+  }
+
+  .wrapper-section {
+    padding-bottom: 0;
+  }
+
+  .jumbotron {
+    margin-top: 0;
+  }
+
+  .expertise-list {
+    display: block;
+  }
+
+  .list-works {
+    display: block;
+
+    li {
+      width: 100%;
+    }
+  }
+
+
+
+
+
+
+
+
+  .list-team {
+    display: block;
+  }
+
+  .slider-quote .slick-initialized .slick-slide {
+    display: block;
+  }
+
+
+
+
+}

@@ -11,6 +11,7 @@
     font-style: italic;
     line-height: 45px;
     color: $white-color;
+    padding: 200px 300px 40px 85px;
   }
 
   cite {
@@ -22,6 +23,20 @@
     padding-left: 85px;
 
   }
+}
+
+.slider-quote .slick-dots {
+  bottom: 80px;
+  left: 320px;
+}
+
+.slider-quote .slick-dots li button::before {
+  color: $white-color;
+  font-size: 13px;
+}
+
+.slider-quote .slick-dots li.slick-active button:before {
+  color: $white-color;
 }
 
 

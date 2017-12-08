@@ -418,8 +418,9 @@ table {
   font-style: italic;
   line-height: 45px;
   color: #ffffff;
+  padding: 200px 300px 40px 85px;
 }
-/* line 16, ../sass/layout/section/slider.scss */
+/* line 17, ../sass/layout/section/slider.scss */
 .quote-slide cite {
   font-family: 'Raleway', sans-serif;
   font-weight: bold;
@@ -427,6 +428,23 @@ table {
   text-transform: uppercase;
   color: #ffffff;
   padding-left: 85px;
+}
+
+/* line 28, ../sass/layout/section/slider.scss */
+.slider-quote .slick-dots {
+  bottom: 80px;
+  left: 320px;
+}
+
+/* line 33, ../sass/layout/section/slider.scss */
+.slider-quote .slick-dots li button::before {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+/* line 38, ../sass/layout/section/slider.scss */
+.slider-quote .slick-dots li.slick-active button:before {
+  color: #ffffff;
 }
 
 /* line 1, ../sass/layout/section/download.scss */
@@ -536,4 +554,52 @@ table {
 .footer-bottom i {
   color: #e84545;
   margin: 0 5px 0 5px;
+}
+
+@media screen and (max-width: 599px) {
+  /* line 2, ../sass/layout/_media-queries.scss */
+  .container {
+    width: 320px;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+
+  /* line 8, ../sass/layout/_media-queries.scss */
+  .fixed {
+    display: none;
+  }
+
+  /* line 12, ../sass/layout/_media-queries.scss */
+  .wrapper-section {
+    padding-bottom: 0;
+  }
+
+  /* line 16, ../sass/layout/_media-queries.scss */
+  .jumbotron {
+    margin-top: 0;
+  }
+
+  /* line 20, ../sass/layout/_media-queries.scss */
+  .expertise-list {
+    display: block;
+  }
+
+  /* line 24, ../sass/layout/_media-queries.scss */
+  .list-works {
+    display: block;
+  }
+  /* line 27, ../sass/layout/_media-queries.scss */
+  .list-works li {
+    width: 100%;
+  }
+
+  /* line 39, ../sass/layout/_media-queries.scss */
+  .list-team {
+    display: block;
+  }
+
+  /* line 43, ../sass/layout/_media-queries.scss */
+  .slider-quote .slick-initialized .slick-slide {
+    display: block;
+  }
 }
