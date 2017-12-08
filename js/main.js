@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $(window).on("scroll",function(){
-        if ($(window).scrollTop() >= 50) {
+        if (($(window).scrollTop() >= 50) && ($(window).width() >= 992) ) {
             $('.header-wrapper').addClass('fixed');
 
         } else {
@@ -14,7 +14,9 @@ $(document).ready(function() {
         speed: 2000,
         arrows:false,
         fade:true
-
     });
+
+
+
 
 });

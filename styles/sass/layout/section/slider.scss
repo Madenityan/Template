@@ -1,6 +1,3 @@
-.slider-quote .slick-initialized .slick-slide {
-   display: flex;
- }
 
 .quote-slide {
   background-color: $brown-color;
@@ -39,4 +36,13 @@
   color: $white-color;
 }
 
+.slide {
+  display: flex;
+}
+ .img-slide {
+  width: 50%;
+}
+.quote-slide {
+  width: 50%;
+}
 
